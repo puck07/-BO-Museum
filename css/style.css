@@ -91,6 +91,7 @@ img{
     cursor: pointer;
     transition: 0.5s;
  }
+
  .btn:hover{
     opacity: 0.8;
  }
@@ -133,3 +134,56 @@ img{
  .text-center{
     text-align: center;
  }
+
+
+
+
+ body
+{
+    min-height: 100vh;
+    background-image: url("./IMG/achtergrond2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.geschiedenis
+{
+    background: white;
+    width: 50vw;
+    padding: 20px;
+}
+
+
+p  
+{
+    color: crimson;
+    font-size: large;
+}
+
+h2
+{
+    color: sienna;
+}
+
+.openingtijd
+{
+    text-align: right;
+    color: aqua;
+    font-size: xx-large;
+}
+
+.adress
+{
+    text-align: left;
+    color: purple;
+    font-size: xx-large
+}
+
+.hand
+{
+    object-position: top right;
+}
+
