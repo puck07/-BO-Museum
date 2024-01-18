@@ -6,12 +6,13 @@
 
 body {
     font-family: 'poppins', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     background: #fff;
-    max-width: 1100px;
+    max-width: 1800px;
     margin: 0 auto;
     padding-left: 0 15px;
+   
 }
 
 
@@ -24,10 +25,6 @@ ul {
     list-style: none;
 }
 
-
-img {
-    max-width: 100%;
-}
 
 .navbar {
     background: white;
@@ -56,136 +53,99 @@ img {
     color: #4891ff;
 }
 
-.article {
-    margin-bottom: 50px;
+main {
+    padding: 40px;
+
 }
 
-.article .container {
-    background: url('../IMG/nxt.jpg') no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-    height: 550px;
+h1 {
+    font-size: 250%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 200%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-weight: 500; 
 }
 
 
-.container {
-    max-width: 1100px;
+.nxtmuseum .geschiedenis .wat .Reviews {
+    width: 60vw;
     margin: 0 auto;
-    padding: 0 15px;
-}
+    padding: 40px;
 
-.container-sm {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 13px 20px;
-    background: lightgray;
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-style: 600;
-    margin: 40px 0 20px;
-}
-
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-style: normal;
-    margin: 40px 0 20px;
-}
-
-.text-lg {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-style: normal;
-    margin: 30px 0 20px;
-}
-
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-style: normal;
-    margin: 20px 0 10px;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-style: normal;
-    margin: 10px 0 5px;
-}
-
-.text-center {
-    text-align: center;
 }
 
 
 
-
-body {
-    min-height: 100vh;
-    background-image: url("./IMG/achtergrond2.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+img:hover {
+    transform: scale(1.05);
 }
 
-.geschiedenis {
-    background: white;
-    width: 50vw;
-    padding: 20px;
+img {
+    border-radius: 5px;
+    transition: 0.2s transform;
+}
+
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro{
+  display: flex;
+  align-content: space-around;
+   
 }
 
 
+
+.Reviews{
+    display: flex;
+}
 p {
-    color: crimson;
-    font-size: large;
-}
-
-h2 {
-    color: sienna;
-}
-
-.openingtijd {
-    text-align: right;
-    color: aqua;
-    font-size: xx-large;
-}
-
-.adress {
-    text-align: left;
-    color: purple;
-    font-size: xx-large
-}
-
-
-.hand {
-    flex-direction: column;
+    margin-bottom: 40px;
 }
 
 footer {
-    background: green;
-    height: 100;
+    height: 200px;
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
+    
+  
 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    article {
+        width: 100vw;
+        padding: 20px;
+
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    footer>p {
+        width: 100vw;
+        padding-left: 20px;
+
+    }
 }
