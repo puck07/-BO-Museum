@@ -103,7 +103,6 @@ img {
 }
 
 
-
 .Reviews{
     display: flex;
 }
@@ -120,7 +119,9 @@ footer {
 
 }
 
-
+.tickets{
+    display: flex;
+}
 
 
 
