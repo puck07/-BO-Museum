@@ -16,6 +16,38 @@
 </head>
 
 <body>
+    <button id="toggle">Dark Mode</button>
+
+<script>
+
+const root = document.documentElement;
+ 
+const toggle = document.getElementById("toggle");
+
+const darkMode = localStorage.getItem("dark-mode");
+
+if (darkMode) 
+{
+  root.classList.add("dark-theme");
+}
+
+toggle.addEventListener("click", () => {
+ 
+root.classList.toggle("dark-theme");
+
+if (root.classList.contains("dark-theme")) 
+{
+    localStorage.setItem("dark-mode", true);
+} 
+else
+{
+    localStorage.removeItem("dark-mode");
+}
+});
+
+
+</script>
+
 
     <nav class="navbar">
         <div class="container">
@@ -64,7 +96,7 @@
                 </p>
                 <a class="tickets" href="#">tickets</a>
                
-                <img src="IMG/handennxt.png" alt="">
+                <img src="IMG/handennxt.png" width=900px alt="">
             </article>
 
             <article>
@@ -95,13 +127,6 @@
 
 
 
-    <img 
-        id="hand"
-        src="IMG/handennxt.png" 
-        width = 500px 
-        height = 600px 
-        alt=""
-    >
         </article>
 
         <article class="wat">

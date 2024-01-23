@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'poppins', sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -15,26 +15,21 @@ body{
    
 }
 
-a{
+
+a {
     text-decoration: none;
     color: #333;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 
-img{
-    max-width: 100%;
-}
-
-.navbar{
+.navbar {
     background: white;
     padding: 20px;
 }
-
-
 
 .navbar .container {
     display: flex;
@@ -42,35 +37,44 @@ img{
     align-items: center;
 }
 
-.navbar .main-menu ul{
+.navbar .main-menu ul {
     display: flex;
+
 }
 
-.navbar ul li a{
+.navbar ul li a {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
     transition: 0.5s;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     color: #4891ff;
 }
 
-.article{
-    margin-bottom: 50px;
+main {
+    padding: 40px;
+
 }
 
-.article .container{
-    background: url('../IMG/nxt.jpg') no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-    height: 550px;
+h1 {
+    font-size: 250%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 200%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-weight: 500; 
 }
 
 
-.container{
-    max-width: 1100px;
+.nxtmuseum .geschiedenis .wat .Reviews {
+    width: 60vw;
     margin: 0 auto;
     padding: 40px;
 
@@ -99,7 +103,6 @@ img {
 }
 
 
-
 .Reviews{
     display: flex;
 }
@@ -116,7 +119,9 @@ footer {
 
 }
 
-
+.tickets{
+    display: flex;
+}
 
 
 
@@ -145,3 +150,41 @@ footer {
 
     }
 }
+
+
+
+
+:root {
+    --bg-color: white; 
+    --text-color: black; 
+  }
+  
+
+  
+.dark-theme {
+    --bg-color: black; 
+    --text-color: white;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+ 
+  #toggle {
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    padding: 10px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+
+
+  #toggle:hover {
+    background-color: gray;
+  }
+
+
+  
