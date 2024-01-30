@@ -27,7 +27,7 @@ ul {
 
 
 .navbar {
-    background: white;
+    background: var(--bg-color);
     padding: 20px;
 }
 
